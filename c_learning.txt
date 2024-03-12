@@ -1,0 +1,582 @@
+#PRINT CHAR (C LEARNING)
+
+#include <stdio.h>
+int
+main()
+{
+    printf("allo sekai \n"); 
+    printf("saya megumi \n");
+    printf("23 \n");
+    return 0;
+}
+
+#MULAI INISIASI NILAI
+#include <stdio.h>
+int main()
+{
+    int x = 67;
+    printf("ini adalah nilai x: %d \n", x);
+    return 0;
+}
+
+#MENGHTIUNG LUAS PERSEGI PANJANG
+#include <stdio.h>
+int main()
+{
+    int p = 67;
+    int l = 94;
+    int luas_persegipanjang = p*l;
+    printf("ini adalah luas persegi panjang: %d \n", luas_persegipanjang);
+    
+    return 0;
+}
+
+#MENGHITUNG LUAS LINGKARAN
+
+#include <stdio.h>
+#define pi 3.14
+int main()
+{
+    int radius = 7;
+    int luas_lingkaran = pi*radius*radius;
+    printf("ini adalah luas lingkaran: %d \n", luas_lingkaran);
+    
+    return 0;
+
+
+#PENGISIAN NILAI DG ASSIGNMENT
+maksudnya, simbol "=" bkn memiliki makna sama dengan, ttpi "diisikan nilainya ke.."
+
+#include <stdio.h>
+#define pi 3.14
+int main()
+{
+    int radius;
+
+    radius = 7;
+    radius = radius+2;
+    int luas_lingkaran = pi*radius*radius;
+    
+    printf("nilai radius (nilai assignment)= %d \n", radius);
+    printf("ini adalah luas lingkaran: %d \n", luas_lingkaran);
+    
+    return 0;
+}
+
+#INISIALISASI DAN ASSIGNMENT NILAI BILANGAN RIIL
+
+#include <stdio.h>
+#define pi 3.14
+int main()
+{
+    float x = 9.87;
+    float y= 15.86;
+    float v = 1.67E3;
+    float t = 2.5;
+    // menghitung luas layang-layang dan kedalaman laut
+    float luas_layanglayang = (x*y)/2;
+    float kedalaman_laut = (v*t)/2;
+
+    // mencetak hasil
+    printf("luas layang-layang adalah: %f cm \n", luas_layanglayang);
+    printf("kedalaman laut adalah    : %5.2f m \n", kedalaman_laut);
+
+    return 0;
+}
+
+#PENGISIAN NILAI BERTIPE KARAKTER
+
+#include <stdio.h>
+int main()
+{
+    // deklarasi sebuah nama (nilai bertipe karakter)
+    char a = 60;
+    char a1; 
+    printf("karakter = %a \n", a);
+    a1 = 'B';
+
+    // penulisan karakter
+    printf("karakter dalam kode ASCII= %d\n", a);
+    printf("karakter sbg huruf= %a\n",a );
+    printf("karakter dlm kode ASCII = %d\n", a1);
+    printf("karakter sbg huruf = %a\n", a1);
+
+    return 0;
+}
+
+#KONSTANTA
+
+#include <stdio.h>
+#define false 0
+#define nol 0
+#define satu 1
+#define e 2.178
+int main()
+{
+    const int maks=10;
+    const float parameter = 4.5;
+    const char cc = 69;
+    const cZ = 'Z';
+
+    printf("e         = %6.2f\n", e);
+    printf("nol       = %d\n", nol);
+    printf("satu      = %d\n", satu);
+    printf("false     = %d\n", false);
+    printf("maks      = %d\n", maks);
+    printf("parameter = %f\n", parameter);
+    printf("cc        = %c\n", cc);
+    printf("cZ        = %c\n", cZ);
+    printf("3\n");
+
+    return 0;
+}
+ 
+note:
+hati2 utk cetak hasil dgn menggunakan %d dan %f (format specifier), krn itu akan memengaruhi nilai.
+- %d digunakan utk mengonversi nilai float (parameter) mjd integer. shg, nilai yg
+keluar pd output akn menjadi "konversi nilai float ke int" dlm hal ini bilangan desimal 4.5 akan mjd 1431671456 dlm biner.
+- %f merup format specifier yg digunakan utk mencetak nilai float, jd gunakan yg ini.
+- sedangkan utk tipe char gunaka format specifier %c
+
+#PEMBACAAN DAN PENULISAN BILANGAN NUMERIK
+
+include <stdio.h>
+
+int main()
+{
+    int x;
+    float y;
+
+
+    printf("ketik nilai integer: ");
+    scanf("%d", &x);
+    printf("nilai integer yang dibaca: %d \n", x);
+
+    printf("ketik nilai bilangan riil: ");
+    scanf("%f", &y);
+    printf("nilai bilangan riil yang dibaca: %f \n", y);    
+
+    return 0;
+}
+
+#MEMBACA KARAKTER
+
+#include <stdio.h>
+
+int main()
+{
+    char cc;
+    char c;
+
+    printf("karasuno\n");
+    printf("baca 1 karakter saja: ");scanf("%c", &cc);
+    printf("%c\n", cc);
+    printf("baca 1 karakter saja: ");scanf("%d", &c);
+    printf("%d\n", c);
+
+    return 0;
+}
+
+
+#OPERASI BOOLEAN
+
+#include <stdio.h>
+
+int main()
+{
+   int true = 1;
+   int false = 0;
+
+   printf("ini nilai true and false: %d\n", true&&false);
+   printf("ini nilai dari true and true: %d\n", true&&true);
+   printf("ini nilai dari false and false: %d\n", false&&false);
+   printf("ini nilai dari false and true: %d\n", false&&true);
+
+   printf("ini nilai dari true or false: %d\n", true||false);
+   printf("ini nilai dari true or true: %d\n", true||true);
+   printf("ini nilai dari false or false: %d\n", false||false);
+   printf("ini nilai dari false or true: %d\n", false||true);
+   
+   printf("ini nilai dari not true: %d\n", !true);
+   printf("ini nilai dari not false: %d\n", !false);
+
+ return 0;
+}
+
+#OPERASI PERBANDINGAN 
+
+#include <stdio.h>
+
+int main()
+{
+   int a = 90;
+   int b = 14;
+
+   printf("hasil a>b  : %d\n", a>b);
+   printf("hasil a<b  : %d\n", a<b);
+   printf("hasil a>=b : %d\n", a>=b);
+   printf("hasil a<=b : %d\n", a<=b);
+   printf("hasil a==b : %d\n", a==b);
+   printf("hasil a!=b : %d\n", a!=b);
+
+   printf("hasil a==a: %d\n", a==a);
+   printf("hasil a!=a: %d\n", a!=a);
+
+ return 0;
+}
+
+
+#GABUNGAN OPERASI BOOLEAN DAN OPERASIONAL
+
+#include <stdio.h>
+
+int main()
+{
+   int uang=7000;
+   int hujan = 0;  /*artinya hujan bernilai false*/
+   printf("uang > 7000 dan tidak hujan: %d\n", (uang>7000) &&(!hujan));
+
+   uang = 10000;
+   hujan = 1; /*hujan bernilai true*/
+   printf("uang > 7000 dan tidak hujan: %d\n", (uang>7000)&&(!hujan));
+
+ return 0;
+}
+
+#INCREMENT DAN DECREMENT
+
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   a = 9;
+   printf("nilai a: %d\n", a, a++);
+   printf("nilai a: %d\n", a, a--);
+   a = 9;
+   printf("%d\n",++a); /*sebelum dicetak, nnilai a ditambah 1*/
+   printf("%d\n", --a); /*sblm cetak, nilai a dikurang 1*/
+ return 0;
+
+}
+ #INSTRUKSI IF SEDERHANA
+
+#include <stdio.h>
+
+int main()
+{
+   int x;
+
+   printf("contoh if suatu kasus \n");
+   printf("ketikkan integer: ");
+   scanf("%d", &x);
+
+   if (x > 5)
+   {
+    printf("nilai x lebih besar dari 5 %d \n", x);
+   }
+  
+
+ return 0;
+
+}
+
+#INSTRUKSI IF ELSE SEDERHANA
+
+#include <stdio.h>
+
+int main()
+{
+   int x;
+
+   printf("contoh if suatu kasus \n");
+   printf("ketikkan integer: ");
+   scanf("%d", &x);
+
+   if (x > 5)
+   {
+    printf("nilai x lebih besar dari 5 %d \n", x);
+   }
+   else{
+    printf("nilai x tidak lebih besar dari 5 %d\n", x);
+   }
+
+ return 0;
+
+}
+
+#INSTRUKSI ELIF
+
+#include <stdio.h>
+
+int main()
+{
+   int a;
+
+   printf("contoh kondisi if tiga kasus \n");
+   printf("ketikkan satu angka 0-6: ");
+   scanf("%d",&a);
+
+   if (a==0)
+   {
+    printf("nilai a ialah minggu %d\n",a);
+   }
+
+   else if (a==1)
+   {
+   printf("nilai a adalah senin %d\n", a);
+   }
+
+   else if (a==2)
+   {
+   printf("nilai a adalah selasa %d\n",a);
+   }
+
+   else if (a==3)
+   {
+    printf("nilai a adalah rabu %d\n",a);
+   }
+
+   else if (a==4)
+   {
+    printf("nilai a adalah kamis %d\n",a);
+   }
+
+   else if (a==5)
+   {
+    printf("nilai a adalah jumat %d\n",a);
+   }
+
+   else if (a==6)
+   {
+    printf("nilai a adalah sabtu %d\n",a);
+   }
+
+ return 0;
+
+}
+
+#ANOTHER EXAMPLE ELIF INSTRUCTIONS
+
+#include <stdio.h>
+
+int main()
+{
+   int a;
+
+   printf("contoh kondisi if tiga kasus \n");
+   printf("ketikkan sebuah angka: ");
+   scanf("%d",&a);
+
+   if (a%2 == 1)
+   {
+    printf("nilai a adalah bilangan ganjil %d \n",a);
+   }
+   
+   else if (a%2 == 0)
+   {
+    printf("nilai a adalah bilangan genap %d \n",a);
+   }
+
+ return 0;
+
+}
+
+#PENGULANGAN FOR
+
+#include <stdio.h>
+
+int main()
+{
+   int i;
+
+   for ( i = 0; i < 7; i++)
+   {
+    printf("Tsukishima Kei husbuku muachhh~ \n");
+   }
+   
+
+ return 0;
+
+}
+
+#PENGULANGAN WHILE-DO
+
+#include <stdio.h>
+
+int main()
+{
+   int i=0;
+   while (i<5)
+   {
+    printf("manifest haikyuu movie tayang!\n");
+    i++;
+   }
+   
+ return 0;
+
+}
+
+#PENGULANGAN DO-WHILE
+#include <stdio.h>
+
+int main()
+{
+   int i=0;
+   do
+   {
+    printf("tsukishima kei husbuku muachh~ \n");
+    i++;
+   } while (i<4);
+
+ return 0;
+
+}
+
+#LOOPING FOREVER
+
+#include <stdio.h>
+
+int main()
+{
+   printf("program akan looping, akhiri dgn Ctrl-c");
+   while (1)
+   {
+    printf("tunggu ^c....\n");
+   }
+   
+
+ return 0;
+
+}
+
+#PENGANTAR ARRAY
+
+#include <stdio.h>
+
+int main()
+{
+   int Tab[7] ={1,2,3,4,5,6,7};
+   float TabX[4] = {3.4, 3.5E3, 90.76, 0.567};
+   char Tabchar[10] = {'T','S','U','K','I','S','H','I','M','A'};
+   int i; /*iterasi indeks tabel, kyk Tab[0]=1, Tab[1]=2, dst..*/
+
+
+   printf("Integer Array Tab: \n");
+   for ( i = 0; i < 7; i++)
+   {
+    printf("Tab[%d]=%d \n ;",i, Tab[i]);
+   }
+   printf("\n"); /*newline separate*/
+
+
+   printf("Float Array TabX: \n");
+   for ( i = 0; i < 4; i++)
+   {
+    printf("TabX[%d]=%f \n;",i, TabX[i]);
+   }
+   printf("\n");
+
+   printf("Char Array Tabchar: \n");
+   for ( i = 0; i < 10; i++)
+   {
+    printf("Tabchar[%d]= %c \n;",i, Tabchar[i]);
+   }
+   printf("\n");
+   
+
+
+ return 0;
+
+}
+
+
+#BACA TULIS ISI TABEL (KE KANAN)
+#include <stdio.h>
+
+int main()
+{
+   int Tab[9];
+   int i;
+   /*baca isi tab*/
+
+   for ( i = 0; i < 9; i++)
+   {
+    scanf("%d", &Tab[i]);
+   }
+   
+   /*menuliskan isi Tab berderet ke kanan*/
+   for ( i = 0; i < 9; i++)
+   {
+    printf("Tab[%d]=%d;", i, Tab[i]);
+   }
+
+   printf("\n");
+  
+
+ return 0;
+
+}
+
+
+#NILAI MAKS DAN MIN
+#include <stdio.h>
+
+int main()
+{
+  int i;
+  int Tab[10]={1, 34, 5, 11, 56, 300, 78, 90, 230, 17};
+  int max;
+  int min;
+
+  max = Tab[0];
+  min = Tab[0];
+
+  for ( i = 0; i < 10; i++)
+  {
+    if (Tab[i]>max){
+      max = Tab[i];
+    }
+    if (Tab[i]<min){
+      min = Tab[i];
+    }
+  }
+  
+  printf("nilai max: %d \n", max);
+  printf("nilai min: %d \n", min);
+
+  
+ return 0;
+
+}
+
+#SORTING-MAXIMUM SORT
+
+#include <stdio.h>
+int main()
+{
+    int i;
+    int Tab[7]= {2, 78, 1000, 15, 27, 11, 3};
+    int max;
+    int k, temp; /*algorithm sort maximum*/
+
+    for(i=0; i<6; i++){
+        max = i;
+        for(k=i+1; k<7; k++){
+            if(Tab[k]>Tab[max]){
+                max = k;
+            }
+        }
+
+    temp = Tab[i];
+    Tab[i]=Tab[max];
+    Tab[max]=temp;
+    }
+    for (i=0;i<7;i++){
+        printf("%d; ", Tab[i]);
+    }
+    return 0;
+
+
+}
+
